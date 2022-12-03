@@ -1,0 +1,581 @@
+*{
+    padding:0;
+    margin:0;
+}
+@font-face {
+    font-family: 'Ranade';
+    src: url('//cdn.fontshare.com/wf/L5FIDTVUREF47ZIMK4SAWFIM3RQHGDRR/DDQOLYOU6G7WW4V2YVREV3FNKPCID7UW/L5RECMN3L4DWXPPVTDJQP3FAU32IQIX5.woff2') format('woff2'),
+         url('//cdn.fontshare.com/wf/L5FIDTVUREF47ZIMK4SAWFIM3RQHGDRR/DDQOLYOU6G7WW4V2YVREV3FNKPCID7UW/L5RECMN3L4DWXPPVTDJQP3FAU32IQIX5.woff') format('woff'),
+         url('//cdn.fontshare.com/wf/L5FIDTVUREF47ZIMK4SAWFIM3RQHGDRR/DDQOLYOU6G7WW4V2YVREV3FNKPCID7UW/L5RECMN3L4DWXPPVTDJQP3FAU32IQIX5.ttf') format('truetype');
+    font-display: swap;
+    
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nippo';
+    src: url('//cdn.fontshare.com/wf/CDTACYC4IPPNPYZXG4P4UHS7QK72WJY6/64YLI2LOSKHSMW7BAB55H3OT6QONCPIY/A33XXN3HW5OI7KZNTLP322IHAOQINDEQ.woff2') format('woff2'),
+         url('//cdn.fontshare.com/wf/CDTACYC4IPPNPYZXG4P4UHS7QK72WJY6/64YLI2LOSKHSMW7BAB55H3OT6QONCPIY/A33XXN3HW5OI7KZNTLP322IHAOQINDEQ.woff') format('woff'),
+         url('//cdn.fontshare.com/wf/CDTACYC4IPPNPYZXG4P4UHS7QK72WJY6/64YLI2LOSKHSMW7BAB55H3OT6QONCPIY/A33XXN3HW5OI7KZNTLP322IHAOQINDEQ.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Ranade';
+    src: url('//cdn.fontshare.com/wf/ITSXUDO4IWX6YYU2XBSXOPG7LUR2PVYM/3EDCKJF5I5VL64ADFO7DBMCCYZ2CJC27/SK34EB5SQXXEEW5G524TDELGL3JO5HHF.woff2') format('woff2'),
+         url('//cdn.fontshare.com/wf/ITSXUDO4IWX6YYU2XBSXOPG7LUR2PVYM/3EDCKJF5I5VL64ADFO7DBMCCYZ2CJC27/SK34EB5SQXXEEW5G524TDELGL3JO5HHF.woff') format('woff'),
+         url('//cdn.fontshare.com/wf/ITSXUDO4IWX6YYU2XBSXOPG7LUR2PVYM/3EDCKJF5I5VL64ADFO7DBMCCYZ2CJC27/SK34EB5SQXXEEW5G524TDELGL3JO5HHF.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+input:focus{
+    outline:none;
+}
+/*
+For Signin Page
+*/
+.sign-in{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow-x: hidden;
+    z-index: 1;
+    height:100vh;
+    background: linear-gradient(to right,rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.2)) ,url(https://images.pexels.com/photos/572487/pexels-photo-572487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+.sign-in .content{
+    margin-top: -60px;
+}
+.sign-in form{
+    position: relative;
+    top:220px;
+    left: 140px;
+    width: 23em;
+    height: 25em;
+}
+.sign-in header{
+    font-weight: 600;
+    position: relative;
+    top:150px;
+    left: 120px;
+    float: left;
+    font-size: 50px;
+    text-align: center;
+    color:#ABFFAD;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.sign-in input{
+    margin-bottom: 30px;
+    font-family: 'Ranade';
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    width:21em;
+    height:3.5em;
+    padding: 0 2em;
+}
+.sign-in #passIcon{
+    position: absolute;
+    top: 148px;
+    left: 300px;
+    font-size: 25px;
+}
+.sign-in input::placeholder{
+    font-size: 16px;
+    font-family: 'ranade';
+    color: rgba(255, 255, 255, 0.5);
+}
+.sign-in button{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #000;
+    border-radius: 15px;
+    background-color: #ABFFAD;
+    width:17.6em;
+    height:2.3em;
+    border:none;
+    position:relative;
+    transition: all 0.2s;
+}
+.sign-in label{
+    color: #ABFFAD;
+}
+.remember{
+    position: relative;
+    top: 168px;
+    left: 10px;
+}
+.remember label{
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    left: 170px;
+    bottom: 87px;
+}
+.remember input{
+    font-size: 5px;
+    position: relative;
+    left: 100px;
+    bottom: 40px;
+}
+.sign-in button:active{
+    transform: scale(0.95);
+}
+.sign-in a{
+    color: #ABFFAD;
+    text-decoration: none;
+    position: relative;
+    left: 210px;
+    top: 25px;
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.sign-in .create p{
+    font-size: 18px;
+    position: relative;
+    left: 180px;
+    top: 160px;
+    color: #4bf74e;
+}
+.sign-in .create a{
+    font-size: 18px;
+    color: #4bf74e;
+    position: relative;
+    left: 240px;
+    top:90px;
+}
+.sign-in img{
+    position: relative;
+    left: 260px;
+    top: 90px;
+    width: 100px;
+    height: 70px;
+    transform: rotate(20deg);
+}
+/*
+Sign-up style
+*/
+.sign-up{
+    position: relative;
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(https://images.pexels.com/photos/1146134/pexels-photo-1146134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    height: 1000px;
+    background-color: #000;
+}
+.sign-up form{
+    background: linear-gradient(to right,rgba(248, 248, 248, 0.5),rgba(222, 218, 218, 0)),url(https://images.pexels.com/photos/3694708/pexels-photo-3694708.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-color: #fff;
+    position: relative;
+    top: 130px;
+    left:50%;
+    transform: translateX(-50%);
+    width:350px;
+    padding:40px 60px 75px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.top-icon img{
+    z-index: 1;
+    width:80px;
+    height:80px;
+    position: relative;
+    left: 120px;
+    top: 170px;
+}
+.sign-up form img{
+    margin-right: 10px;
+    width: 30px;
+    height:30px;
+}
+.sign-up form img{
+    position: relative;
+    right: 20px;
+    top: 50px;
+}
+.sign-up header{
+    position: relative;
+    top:30px;
+    left: 430px;
+    float: left;
+    font-size: 65px;
+    font-weight: 600;
+    text-align: center;
+    color:#47fbaa;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.sign-up input{
+    z-index: 1;
+    margin-top:-8px;
+    font-family: 'Ranade';
+    font-size: 16px;
+    color: rgb(4, 4, 4);
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-bottom: 2px solid #777;
+    width:19em;
+    height:3.5em;
+    padding-left: 2em;
+    position: relative;
+    left: 20px;
+    transition: all 0.3s;
+    background: transparent;
+}
+.sign-up input::placeholder{
+    z-index: 1;
+    font-size: 16px;
+    font-family: 'ranade';
+    color: rgba(0, 0, 0, 0.9);
+}
+.sign-up input:focus{
+    border-bottom: 2px solid #8321b8;
+}
+.sign-up button{
+    z-index: 1;
+    width:19em;
+    height:2.3em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left: -8px;
+    padding: 0 30px;
+    color: #000;
+    font-weight: 600;
+    border-radius: 15px;
+    background-color:#46FBAA;
+    border:none;
+    transition: all 0.4s;
+}
+.sign-up button:hover{
+    box-shadow: 0 30px 110px 0.01px black;
+}
+.sign-up button:active{
+    transform: scale(0.95);
+}
+.sign-up a{
+    color: #ABFFAD;
+    text-decoration: none;
+    position: relative;
+    right: 145px;
+    top:53px;
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.sign-up #error{
+    position: relative;
+    top: 10px;
+    left:5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(239, 90, 160);
+}
+.sign-up .navbar{
+    margin-top: -14px;
+    margin-bottom: 50px;
+}
+.sign-up .option{
+    margin-top: -5px;
+    display: flex;
+    position: relative;
+    bottom: 13px;
+    left: 18%;
+}
+.sign-up .option .or{
+    margin: 0 5px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    position: relative;
+    top: 30px;
+    left: 100px;
+    color: rgb(54, 50, 50);
+}
+
+.sign-up a button,.sign-up a{
+    color: black;
+    position: absolute;
+    font-weight: 600;
+    left:88px;
+    bottom: 4px;
+    font-size: 18px;
+}
+.sign-up a button{
+    width:150px;
+    background:none;
+    transition: all 0.4s;
+}
+.sign-up a button:hover{
+    background-color:#46FBAA;
+    box-shadow: 0 30px 50px 0.1px black;
+}
+/*
+Navbar styles
+*/
+.navbar{
+    border-radius: 30px;
+    font-weight: 900;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 80px;
+    width: 100vw;
+    color: #B2AFB6;
+    display: flex;
+}
+.navbar a{
+    font-size: 16px;
+    text-decoration: none;
+    margin: 20px 30px;
+    position: relative;
+    color: #AFAAB5;
+    margin-top: 10px;
+    left: 300px;
+    width: 190px;
+    height: 50px;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+.navbar a:hover{
+    box-shadow: 0px 50px 150px 1px black;
+    background-color: #7C70FF;
+    color: white;
+}
+.navbar a:active{
+    transform: scale(0.9);
+}
+.navbar i {
+    position: relative;
+    left: 20px;
+    top: 14px;
+    margin-right: 10px;
+}
+.navbar p{
+    overflow-x: hidden;
+    position: relative;
+    top: 14px;
+    left: 20px;
+}
+.navbar a:nth-child(1){
+    width: 120px;
+}
+.navbar a:nth-child(3){
+    width: 120px;
+}
+.navbar a:nth-child(4){
+    width: 130px;
+}
+/*
+Home styles
+*/
+.Home{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100vw;
+    background-color: white;
+}
+.Home .nav{
+    position: relative;
+    top:25px;
+}
+.Home .content{
+    text-align: center;
+    position: relative;
+    border-radius: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.Home img{
+    z-index: 1;
+    background-color:#7C70FF ;
+    border-radius: 20px;
+    width: 40px;
+    position: absolute;
+    left: 200px;
+    top: 40px;
+    transition: all 0.3s;
+}
+.Home img:hover{
+    background: transparent;
+    transform:scale(1.2);
+}
+.Home #search{
+    z-index: 1;
+    position: absolute;
+    top: 40px;
+    left: 1150px;
+}
+.Home #search input{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    width: 180px;
+    height: 40px;
+    padding-left: 35px;
+    border: none;
+    background-color:#7C70FF ;
+    transition: all 0.1s;
+    border-radius: 10px;
+    color: white;
+}
+.Home #search input::placeholder{
+    color: white;
+}
+.Home #search input:focus{
+    outline: none;
+}
+.Home #search i{
+    color: white;
+    position: absolute;
+    left: 8px;
+    top: 10px;
+}
+.Home form{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 10px;
+    /*background-color: #EEE9FF;*/
+    position: relative;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    height: 250px;
+}
+.Home form textarea{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #EEE9FF;
+    color: #40344F;
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+    left: 20px;
+    width: 500px;
+    margin: 0 auto;
+    height: 60px;
+    padding: 20px 80px 80px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+}
+.Home form textarea::placeholder{
+    font-size:18px;
+    color: #AFAAB5;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Home form .fa-solid{
+    color: #fff;
+    font-size: 24px;
+    transition: all 0.4s;
+}
+.Home form .fa-solid:hover{
+    color: #000;
+}
+.Home form .addon{
+    width: 40px;
+    height: 101px;
+    background-color: #987AD7;
+    border-top-left-radius: 5px;
+    position: relative;
+    left: 610px;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.Home form .addon i{
+    margin-bottom: 5px;
+    color:#ffffff;
+    font-size:24px;
+    transition: all 0.4s;
+}
+.Home form .addon i:hover{
+    color:black;
+}
+.Home form button{
+    background: transparent;
+    border: none;
+}
+.Home form button i{
+    border-bottom-left-radius: 5px;
+    padding-top: 19px;
+    margin-bottom: 0;
+    width: 40px;
+    height: 30px;
+    background-color: #987AD7;
+    position: relative;
+    right: 50px;
+    bottom: 110px;
+    color: #fff;
+}
+.Home .content img{
+    background-color:#B08DF9;
+    position: absolute;
+    top: 110px;
+    left: 410px;
+}
+.Home .content img:hover{
+    background: transparent;
+}
+.posts{
+    position: relative;
+    top: 100px;
+}
+/*
+Post styles
+*/
+.post-detail .content{
+    font-size: 18px;
+    margin-bottom: 70px;
+    position: relative;
+    bottom: 30px;
+    background-color: #E6F6DF;
+    padding: 60px 70px 90px;
+    width: 500px;
+}
+.post-detail .content p{
+    border-top: 1px solid rgb(150, 146, 146);
+    border-bottom: 1px solid rgb(150, 146, 146);
+    padding: 30px 0;
+    color: #40344F;
+    position: relative;
+    top: 20px;
+}
+.post-detail .content h4{
+    font-weight: 900;
+    margin-top: -15px;
+    color: #40344F;
+}
+.post-detail .content img{
+    float: inline-start;
+    background-color: #B3ECB9;
+    position: absolute;
+    left: 15px;
+    top: 30px;
+}
+.post-detail .content .change{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 30px;
+    top: 40px;
+}
+.post-detail .content .change i:first-child{
+    color: rgb(206, 32, 32);
+    margin-bottom: 10px;
+}
+.post-detail .content .like-dislike{
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    font-size: 26px;
+}
+.post-detail .content .like-dislike i:first-child{
+    margin-right: 5px;
+}
+.post-detail .content .like-dislike #like{
+    font-size: 20px;
+    margin-right: 15px;
+}
+.post-detail .content .like-dislike #dislike{
+    font-size: 20px;
+}
